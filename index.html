@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Redes Neurais - Teachable Machine</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <header class="jumbotron" style="background-color:#2f9e41; color:white;">
+            <h1>IFSULDEMINAS - Teachable Machine </h1>
+            <h1>MODELO DE IMAGENS - MATRIX 2020 </h1>
+            <p>Campus Machado </p>
+        </header>
+        <h4>Isqueiro</h4>
+        <div id="isqueiro">
+            Isqueiro é um dispositivo portátil usado para gerar fogo, patenteado em 1823 pelo químico alemão Johann Wolfgang Döbereiner.
+            Com uma roldana de metal rugoso, roda sobre uma pederneira, pressionada contra a roldana por meio de uma mola, para gerar faísca. Com o polegar, num movimento rápido, o utilizador do isqueiro acciona a roldana contra a pedra, deixando cair o dedo sobre uma válvula de gás propano, criando a chama, geralmente regulável. Este modelo, fabricado em plástico e descartável, tem sido o mais comercializado nos últimos tempos.
+
+        </div>
+        <h4>Talher</h4>
+    <div id="talher">
+            Talheres são utensílios para manipular e facilitar o ato de se alimentar. São tradicionalmente considerados talheres as colheres, os garfos e as facas. Os pauzinhos orientais (em japonês hashi) também podem ser considerados talheres.
+        </div>
+        <h4>Headset</h4>
+        <div id="fone">
+            Headset é um conjunto de fone de ouvido com controle de volume e microfone acoplado para uso em microcomputadores multimídia e também para Telemarketing, ficando preso à cabeça do usuário.
+        </div>
+        <h4>Você tem certeza que esta pronto para toda essa tecnologia?</h4>
+        <p>
+            Esta pagina ira buscar dentro da Matrix as informações necessarias para lhe informar se o que voce esta segurando é um desses tres itens explicados acima
+        </p>
+  <p>
+      Clique no botão abaixo para reconhecimento
+  </p>   
+<button type="button" class="btn btn-dark" onclick="init()">Iniciar Reconhecimento na Matrix</button>
+<div id="webcam-container"></div>
+<div id="label-container"class="display-4"></div>
+
+
+        <footer class="panel-footer" style="text-align:center; background-color:#2f9e41; color:white;"> 
+            Todos direitos reservados - Departamento de Computação - IFSULDEMINAS - Campus Machado
+        </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script src="tensor.js"></script>
+</body>
+</html>
